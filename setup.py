@@ -1,6 +1,6 @@
 import os
 import sys
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 from fnmatch import fnmatchcase
 from distutils.util import convert_path
 
@@ -52,9 +52,10 @@ setup(name='docassemble.ILAOEfile',
       author_email='formsupport@illinoislegalaid.org',
       license='The MIT License (MIT)',
       url='https://docassemble.org',
-      packages=find_packages(),
-      namespace_packages=['docassemble'],
-      install_requires=['docassemble.ALToolbox>=0.8.3', 'docassemble.AssemblyLine>=2.26.0', 'docassemble.EFSPIntegration>=1.4.3'],
+      packages=find_namespace_packages(),
+      install_requires=['docassemble.ALToolbox>=0.8.3', 'docassemble.AssemblyLine>=2.26.0', 'docassemble.EFSPIntegration>=1.4.3',
+          'docassemble.ILAO @ git+https://github.com/IllinoisLegalAidOnline/docassemble-ILAO.git@main'
+          ],
       zip_safe=False,
       package_data=find_package_data(where='docassemble/ILAOEfile/', package='docassemble.ILAOEfile'),
      )

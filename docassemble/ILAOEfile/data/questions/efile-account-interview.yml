@@ -2,8 +2,8 @@
 include:
   - docassemble.EFSPIntegration:unauthenticated_interview.yml
   - docassemble.AssemblyLine:assembly_line.yml
-  - docassemble.ILAOEfile:ilao-interview-framework.yml
-  - docassemble.ILAOEfile:shared-basic-questions.yml
+  - docassemble.ILAO:ilao-interview-framework.yml
+  - docassemble.ILAO:shared-basic-questions.yml
 ---
 code: |
   interview_short_title = "Fee Waiver"
@@ -20,7 +20,7 @@ default screen parts:
   logo: |
     <div class="title-container">
       <div class="al-logo">
-        <img src="/packagestatic/docassemble.ILAOEfile/logo_white_30.svg" alt="Illinois Legal Aid Online logo">
+        <img src="/packagestatic/docassemble.ILAO/logo_white_30.svg" alt="">
       </div>
       <div class="al-title">
         <div class="title-row-1">${ all_variables(special='metadata').get('title','').rstrip() }</div>
@@ -30,7 +30,7 @@ default screen parts:
   short logo: |
     <div class="title-container">
       <div class="al-logo">
-        <img src="/packagestatic/docassemble.ILAOEfile/logo_white_30.svg" alt="Illinois Legal Aid Online logo">
+        <img src="/packagestatic/docassemble.ILAO/logo_white_30.svg" alt="">
       </div>
       <div class="al-title">
         <div class="title-row-1">${ all_variables(special='metadata').get('short title','').rstrip() }</div>
