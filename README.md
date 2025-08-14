@@ -1,6 +1,6 @@
 # docassemble.ILAOEfile
 
-A docassemble extension.
+A docassemble package containing Efiling YAML interview files.
 
 ## Author
 
